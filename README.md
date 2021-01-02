@@ -199,18 +199,11 @@ These are apt package manager instructions but you can install the required pack
 
 * `cleardownloads` - delete all downloads (Sudo Users)
 
-
-## Features
-
-1. Download, queue and play videos from YouTube.
-2. Stream any internet radio.
-3. Ban and unban users from using the bot.
-
 ## TODOS
 
 1. Migrate to proper Database like SQLite for storing media queue and user requests.
-2. Fix issue related to displaying duration.
-3. Keep track of previous and completed media requests.
+2. Keep track of previous and completed media requests.
+3. Add the [features requested by users] (https://t.me/su_Bots/34).
 
 ## Authors & Acknowledgment
 
@@ -229,5 +222,3 @@ These are apt package manager instructions but you can install the required pack
 * [@NicolaSmaniotto](https://github.com/NicolaSmaniotto)
 * [@sppidy](https://github.com/sppidy)
 * [@Quiec](https://github.com/Quiec) ([Telegram](https://t.me/fusuf))
-
-## License
