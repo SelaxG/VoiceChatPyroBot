@@ -5,7 +5,7 @@ If you face an error, want to discuss this project or get support for it, join [
 
 ## Requirements
 * A computer (Linux VPS recommmended).
-* A Telegram alt account.
+* An alt Telegram account.
 * Bot token from [@BotFather](https://t.me/BotFather).
 * API ID & hash from [my.telegram.org](https://my.telegram.org).
 * Python3 & pip3.
