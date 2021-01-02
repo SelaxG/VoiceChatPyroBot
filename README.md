@@ -130,11 +130,36 @@ These are apt package manager instructions but you can install the required pack
 
 9. Done, you can now start sending commands to your bot and it'll stream in the voice chat.
 
+#### On Windows 10 PC
+
+1. Download Voicemeeter [here](https://vb-audio.com/Voicemeeter/index.htm) and install it.
+
+2. Download virtual audio cable [here](https://vb-audio.com/Cable/index.htm) and install it.
+
+3. Reboot.
+
+4. Right click the speaker account in your taskbar, then click playback.
+
+5. Set Voicemeeter input and Voicemeeter output as default and click OK.
+
+6. Download mplayer [here](https://sourceforge.net/projects/mplayerwin/), extract it and add it to path.
+
+7. Start Voicemeeter engine.
+
+8. Run the bot:
+```
+   python bot.py
+```
+
+9. Open Telegram, join a voice chat and set `Voicemeeter input` as your microphone.
+
+10. Done, you can now start sending commands to your bot and it'll stream in the voice chat.
+
 ## Usage
 
 #### Method 1
 
-1. Open [YouTube]( "https://youtube.com") in your browser, and search for a song.
+1. Open [YouTube](https://youtube.com) in your browser, and search for a song.
 2. Copy the complete video URL to clipboard and send it to your bot in private.
 
 
