@@ -93,6 +93,43 @@ These are apt package manager instructions but you can install the required pack
 
 11. Done, you can now start sending commands to your bot and it'll stream in the voice chat.
 
+#### On Linux desktop
+
+These are apt package manager instructions but you can install the required packages with other package managers too.
+
+1. Update and upgrade apt:
+```
+    sudo apt update && sudo apt upgrade
+```
+
+2. Install requirements:
+```
+    sudo apt install pulseaudio mplayer pavucontrol screen
+```
+
+3. If you have Telegram skip this step, otherwise download it [here](https://desktop.telegram.org).
+
+4. Go to directory of the clone and load a pulseaudio null sink, by running:
+```
+    bash pa.sh
+```
+
+5. Make a screen for the bot and attach to it:
+```
+    screen -S vcbot
+```
+
+6. Run the bot:
+```
+   python(3) bot.py
+```
+
+7. Detattach from the screen by pressing CTRL+A then CTRL+D.
+
+8. Open Telegram, join a voice chat and set `MySink.monitor` as your microphone.
+
+9. Done, you can now start sending commands to your bot and it'll stream in the voice chat.
+
 ## Usage
 
 #### Method 1
