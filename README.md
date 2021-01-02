@@ -157,7 +157,7 @@ These are apt package manager instructions but you can install the required pack
 
 ## Usage
 
-#### Method 1
+#### Streaming YouTube videos
 
 1. Open [YouTube](https://youtube.com) in your browser, and search for a song.
 2. Copy the complete video URL to clipboard and send it to your bot in private.
@@ -228,5 +228,6 @@ These are apt package manager instructions but you can install the required pack
 * [@subinps](https://github.com/subinps)
 * [@NicolaSmaniotto](https://github.com/NicolaSmaniotto)
 * [@sppidy](https://github.com/sppidy)
+* [@Quiec](https://github.com/Quiec) ([Telegram](https://t.me/fusuf))
 
 ## License
