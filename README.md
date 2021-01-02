@@ -48,7 +48,7 @@ Copy `sample_config.py` to `config.py` and make it use your credentials:
 
 #### On Linux VPS
 
-These are Ubuntu package manager instructions but you can install the required packages on other distros too.
+These are apt package manager instructions but you can install the required packages with other package managers too.
 
 1. Update and upgrade apt:
 ```
