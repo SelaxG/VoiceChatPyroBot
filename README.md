@@ -62,7 +62,7 @@ These are apt package manager instructions but you can install the required pack
 
 3. Download tdesktop:
 ```
-    cd ~ && wget https://telegram.org/dl/desktop/linux -O tdesktop.tar.xz && tar -xf *xz && rm -r *xz
+    cd ~ && wget https://telegram.org/dl/desktop/linux -O tdesktop.tar.xz && tar -xf tdesktop.tar.xz && rm tdesktop.tar.xz
 ```
 
 4. Configure XRDP session to only start Telegram:
