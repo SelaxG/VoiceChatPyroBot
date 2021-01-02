@@ -67,7 +67,7 @@ These are apt package manager instructions but you can install the required pack
 
 4. Configure XRDP session to only start Telegram:
 ```
-    echo "./Telegram/Telegram" >~/.xsession
+    echo "~/Telegram/Telegram" >~/.xsession
 ```
 
 5. Go back to directory of the clone and load a pulseaudio null sink, by running:
