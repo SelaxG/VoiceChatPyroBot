@@ -4,20 +4,23 @@
 If you face an error, want to discuss this project or get support for it, join [@su_Chats](https://t.me/su_Chats) on Telegram.
 
 ## Requirements
-* A computer running a Linux distribution with a desktop environment (if you are on VPS and don't have one, refer to [this](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/use-remote-desktop)),
-* the latest version of Telegram desktop,
-* `pulseaudio` (installation on Ubuntu: `apt install pulseaudio`),
-* `mplayer` (installation on Ubuntu: `apt install mplayer`),
-* `python3` (installation on Ubuntu: `apt install python3`) and
-* `python3-pip` (installation on Ubuntu: `apt install python3-pip`) installed on it.
+* A computer (Linux VPS recommmended).
+* A Telegram account
+* Bot token from [@BotFather](https://t.me/BotFather).
+* API ID & hash from [my.telegram.org](https://my.telegram.org).
+* Python3 & pip3.
 
-## Running
-1. Make sure you are not running any command as root, to avoid bulky errors.
-2. Clone the repository and change the dir:
+## Deploying
+
+### The code
+
+#### Cloning
 ```
     git clone https://github.com/suprojects/VoiceChatPyroBot.git tgvcbot && cd tgvcbot
 ```
-3. Copy `sample_config.py` to `config.py` and make it use your credentials:
+
+#### Configuring
+Copy `sample_config.py` to `config.py` and make it use your credentials:
 
     `API_ID` int: your api id from [my.telegram.org](https://my.telegram.org)
 
@@ -33,24 +36,61 @@ If you face an error, want to discuss this project or get support for it, join [
     
     `DUR_LIMIT` int: max video duration in minutes for downloads
 
-4. Install the required Python packages:
-```bash
+#### PIP requirements
+```
     pip(3) install -U -r requirements.txt
 ```
-5. Make sure pulseaudio is running and load a null sink named `MySink` by running:
-```bash
+
+### Running
+
+⚠️ Warning for Linux users: don't run any command as root (except those which require it), else you'll face bulky pulseaudio problems. You can create a user with `adduser`.
+
+#### On Linux VPS
+
+These are Ubuntu instructions but you can install the required packages on other distros too.
+
+1. Update and upgrade apt:
+```
+    sudo apt update && sudo apt upgrade
+```
+
+2. Install requirements:
+```
+    sudo apt install xrdp pulseaudio mplayer screen
+```
+
+3. Download tdesktop:
+```
+    cd ~ && wget https://telegram.org/dl/desktop/linux -O tdesktop.tar.xz && tar -xf *xz && rm -r *xz
+```
+
+4. Configure XRDP session to only start Telegram:
+```
+    echo "./Telegram/Telegram" >~/.xsession
+```
+
+5. Go back to directory of the clone and load a pulseaudio null sink, by running:
+```
     bash pa.sh
 ```
-6. Run the bot:
-```bash
-    python(3) bot.py
-```
-7. Open Telegram desktop, join a voice chat and set `MySink.monitor` as your microphone, if you can't see `MySink.monitor`:
-    1. Open pulseaudio volume control (pavucontrol).
-    2. The configurations tab.
-    3. Turn the configs/profiles you see off.
-9. Once you've done the steps above, you can start using and sending commands to your bot to stream in the voice chat you are currently in with Telegram desktop!
 
+6. Make a screen for the bot and attach to it:
+```
+    screen -S vcbot
+```
+
+7. Run the bot:
+```
+   python(3) bot.py
+```
+
+8. Detattach from the screen by pressing CTRL+A then CTRL+D.
+
+9. Open a remote desktop client and login to your user.
+
+10. You should see the Telegram GUI, just login, join a voice chat and set `MySink.monitor` as your microphone.
+
+11. Done, you can now start sending commands to your bot and it'll stream in the voice chat.
 
 ## Usage
 
