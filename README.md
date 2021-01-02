@@ -20,6 +20,7 @@ If you face an error, want to discuss this project or get support for it, join [
 ```
 
 #### Configuring
+
 Copy `sample_config.py` to `config.py` and make it use your credentials:
 
     `API_ID` int: your api id from [my.telegram.org](https://my.telegram.org)
@@ -47,7 +48,7 @@ Copy `sample_config.py` to `config.py` and make it use your credentials:
 
 #### On Linux VPS
 
-These are Ubuntu instructions but you can install the required packages on other distros too.
+These are Ubuntu package manager instructions but you can install the required packages on other distros too.
 
 1. Update and upgrade apt:
 ```
