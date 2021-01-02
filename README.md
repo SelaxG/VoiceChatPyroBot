@@ -23,19 +23,19 @@ If you face an error, want to discuss this project or get support for it, join [
 
 Copy `sample_config.py` to `config.py` and make it use your credentials:
 
-    `API_ID` int: your api id from [my.telegram.org](https://my.telegram.org)
+`API_ID` int: your api id from [my.telegram.org](https://my.telegram.org)
 
-    `API_HASH` str: your api hash from [my.telegram.org](https://my.telegram.org)
+`API_HASH` str: your api hash from [my.telegram.org](https://my.telegram.org)
 
-    `TOKEN` str: your bot token from [@BotFather](https://t.me/BotFather)
+`TOKEN` str: your bot token from [@BotFather](https://t.me/BotFather)
 
-    `SUDO_USERS` list(int): a list of user ids which can pause, skip and change volume
+`SUDO_USERS` list(int): a list of user ids which can pause, skip and change volume
 
-    `LOG_GROUP` int: (optional) a group chat id to send "now playing" messages to in a non-spammy way
+`LOG_GROUP` int: (optional) a group chat id to send "now playing" messages to in a non-spammy way
     
-    `LANG` str: your bot language, choose an available language code in [strings/](https://github.com/suprojects/VoiceChatPyroBot/tree/main/strings)
+`LANG` str: your bot language, choose an available language code in [strings/](https://github.com/suprojects/VoiceChatPyroBot/tree/main/strings)
     
-    `DUR_LIMIT` int: max video duration in minutes for downloads
+`DUR_LIMIT` int: max video duration in minutes for downloads
 
 #### PIP requirements
 ```
